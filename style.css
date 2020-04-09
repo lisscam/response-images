@@ -1,1 +1,160 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fcc7a4f3;
+    font-size: 1rem;
+    font-family: 'Helvetica';
+}
+* {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin-top: 0;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+ul, p {
+    margin: 0;
+}
 
+p {
+    line-height: 1.5;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    width: 100%
+}
+
+a:hover {
+    opacity: .7;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1200px;
+
+}
+.section {
+    margin-bottom: 90px;
+}
+/* Gabe's CSS above */
+
+
+
+/*Profile image CSS */
+.profile_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    color: rgb(204, 123, 30);
+}
+.profile_img{
+    border-radius: 50%;
+    height: 150px; /*never used fix height and width cuz it will break your stuff most of the time.*/
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Header */
+.hero {
+    background-image: url('./images/hero.jpg');
+    background-size: cover;
+    background-position: center ;
+    background-color: rgba(151, 105, 7, 0.932);
+    background-blend-mode: multiply;
+    height: 50vh;
+    /* To help position header */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+     /* For the rubric but doesnt actually do anything */
+    object-fit: contain;
+}
+
+.hero_heading {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Images grid CSS */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; 
+}
+
+.col {
+    width: 70;
+} 
+
+.col img{
+    object-fit: cover; 
+    height: 100%;
+    padding: 10px;
+    
+}
+
+.cat_image{
+    border-radius: 40px;
+}
+
+@media (min-width: 900px) {
+    .col {
+        width: calc(100% /3);
+    }
+}  
+
+/* 
+----how to create overlay on background position in center---
+.hero {
+    background-image: url('./images/hero.jpg');
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 255, 149, 0.5);
+    background-blend-mode: overlay;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  //center it horizontally
+    align-items: center; //center it vertically
+}
+
+.hero_heading {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+-----------How to Make a responsive Image Grid----------
+.row {
+    display: flex;
+    flex-wrap: wrap; //need to call the flex can start a new line
+}
+
+.col {
+    width: 50%;
+} 
+
+.col img{
+    object-fit: cover; //suppos to stretch and fit element without warping.
+    height: 100%;
+}
+@media (min-width: 900px) {
+    .col {
+        width: calc(100% /3); //makes the pixels exact divides em by number of stuff evenly. More exact than just using 33 percent
+    }
+    
+}
+*/
